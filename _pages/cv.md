@@ -7,13 +7,8 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
-
-**Email:** [jasonpeh0703@gmail.com](mailto:jasonpeh0703@gmail.com)  
-**LinkedIn:** [linkedin.com/in/jia-da-peh-b19454259](https://linkedin.com/in/jia-da-peh-b19454259)  
-**GitHub:** [[github.com/jasonpeh373](https://github.com/jasonpeh373)](https://jasonpeh373.github.io/)
-=====
-
+{% include base_path %} 
+---
 ## Skills
 
 - **Ethical Hacking**
