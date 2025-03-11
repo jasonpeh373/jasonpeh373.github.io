@@ -7,58 +7,41 @@ redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+{% include base_path %} 
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Diploma in Information Technology (Digital Technology), Politeknik Mersing, Johor, 2021-2024
+* SPM, SMK Ulu Tiram, Johor, 2015-2021
 
-Work experience
+Projects
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **ARw@yloac8 X Secure Myobs**  
+  - Developed an AR indoor navigation system for the Melaka Prison Museum
+  - Integrated geospatial data and image recognition for real-time location info
+  - Conducted pentesting for the museum’s website
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Recognition & Awards
+======
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- **CRAC'23 2023** (Team Bømbåstïç S¡dë £¥€, Captain):  
+  Achieved Champion in CRAC'23 2023. Served as team captain in boot2root, Reverse Engineering, and Steganography.
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- **3108 CTF BahteraSiber 2023 (Beginner Category):**  
+  Participated in this open-to-all Malaysian competition.
+
+- **16th FIRA Malaysia Cup 2023 (Drone Category, Mission 1 Line Following):**  
+  Used Robot Operating System (ROS), Python, and OpenCV.
+
+- **Pertandingan Pengaturcaraan Komputer (PPKomp 2023):**  
+  Achieved Gold Award.
+
+- **Curtin Malaysia Capture The Flag Hackathon 2023:**  
+  Led Team Bømbåstïç S¡dë £¥€ and ranked 17 out of 90 among Bachelor's and Master's Degree participants.
+
+- **Raksasa Capture The Flag 2023:**  
+  Ranked 2nd out of 133 participants in the Southern Zone (Qualification Round) and 4th out of 30 in the Final Round.
+
+- **iHack2022 (Team $hutBang, Captain):**  
+  Led Team $hutBang as captain.
+
