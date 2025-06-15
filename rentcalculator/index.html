@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>房租费用分摊计算器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>房租 + 水电费 分摊计算器</h1>
+  <form id="billForm">
+    <label>本月总房租 (RM): <input type="number" id="rent" required></label><br>
+    <label>水费 (RM): <input type="number" id="water" required></label><br>
+    <label>电费 (RM): <input type="number" id="electric" required></label><br><br>
+
+    <div id="peopleContainer"></div>
+    <button type="button" onclick="addPerson()">+ 添加室友</button><br><br>
+    <button type="submit">计算费用</button>
+  </form>
+
+  <h2>账单结果</h2>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

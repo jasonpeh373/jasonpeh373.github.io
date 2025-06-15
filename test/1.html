@@ -65,13 +65,23 @@
                     var b = Math.floor(Math.random() * 256);
                     return "rgb("+r+","+g+","+b+")";
                 }
+               
+                
 
                 draw();
                 setInterval(draw,30);
             };
-
+            function frame() {
+                  if (frames > 100000) {
+                    seedTimer = 0;
+                    frames = 0;
+                }
+                frames++;
+                requestAnimationFrame(frame);
+                }
+            frame();
         </script>
-
+        <script src="js/index.js"></script>
 
     </body>
 </html>
