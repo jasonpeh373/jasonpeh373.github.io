@@ -16,7 +16,7 @@ document.getElementById('billForm').addEventListener('submit', function(event) {
   const rent = parseFloat(document.getElementById('rent').value);
   const water = parseFloat(document.getElementById('water').value);
   const electric = parseFloat(document.getElementById('electric').value);
-  const totalCost = rent + water + electric;
+  const utilityCost = water + electric;
 
   const names = document.querySelectorAll('.name');
   const checkins = document.querySelectorAll('.checkin');
@@ -40,10 +40,12 @@ document.getElementById('billForm').addEventListener('submit', function(event) {
     totalDays += days;
   }
 
-  let resultHTML = `<p>总费用 RM ${totalCost.toFixed(2)}，共 ${totalDays} 天</p><ul>`;
+  const fixedRentPerPerson = rent / people.length;
+  let resultHTML = `<p>总水电费 RM ${utilityCost.toFixed(2)}，总天数 ${totalDays} 天</p><ul>`;
   for (const person of people) {
-    const share = (person.days / totalDays) * totalCost;
-    resultHTML += `<li>${person.name}：住了 ${person.days} 天，应付 RM ${share.toFixed(2)}</li>`;
+    const utilityShare = (person.days / totalDays) * utilityCost;
+    const total = fixedRentPerPerson + utilityShare;
+    resultHTML += `<li>${person.name}：住了 ${person.days} 天，应付：房租 RM ${fixedRentPerPerson.toFixed(2)} + 水电 RM ${utilityShare.toFixed(2)} = 总计 RM ${total.toFixed(2)}</li>`;
   }
   resultHTML += '</ul>';
   document.getElementById('result').innerHTML = resultHTML;
